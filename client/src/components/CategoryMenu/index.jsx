@@ -12,9 +12,8 @@ function CategoryMenu() {
   // const [state, dispatch] = useStoreContext();
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  console.log("categories:", categories)
   const { categories } = state;
-
+  
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
   useEffect(() => {
